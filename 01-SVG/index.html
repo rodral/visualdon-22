@@ -14,21 +14,38 @@
 
     <h1>Dessiner des formes</h1>
     <h2>Rectangle</h2>
+      <svg >
+        <rect x="0" y="0" width="400" height="100" fill="red" />
+      </svg>
 
     <h2>Donut</h2>
-
+      <svg >
+        <circle cx="50" cy="50" r="60" fill=none stroke="black"/>
+        <circle cx="50" cy="50" r="30" fill=none stroke="black"/>
+      </svg>
 
     <h2>Ligne</h2>
-
+     <svg >
+      <circle cx="20" cy="50" r="5" fill="steelblue"/>
+      <text x="25" y="40" font-size="24">A</text>
+      <line x1="10" y1="40" x2="50" y2="80" stroke="red" /> <!--wrong-->
+     </svg>
 
     <h2>Path</h2>
-
+     <svg width="400">
+      <path d="M 0 100 L 40 0 L 80 100 M 12 50 H 71" fill="none" stroke="steelblue" />
+      <path d="M 100 0 L 100 90 C 100 100 100 100 150 100 150 100" fill="none" stroke="steelblue" />
+      <path d="M 170 100 L 210 0 L 250 100 M 182 50 H 241" fill="none" stroke="steelblue" />
+      <path d="M 270 50 Q 270 0, 310 50 T 350 50" stroke="black" fill="transparent"/>
+     </svg>
 
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>
-
+      <svg></svg>
+    
     <h2>On hover</h2>
+      <svg></svg>
 
     <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
 
