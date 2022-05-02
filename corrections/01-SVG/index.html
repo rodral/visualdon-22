@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>1-SVG</title>
+    </head>
+    <body>
+
+    <h1>Dessiner des formes</h1>
+    <h2>Rectangle</h2>
+    <p>Dessiner un rectangle rouge de 400px de largeur et 100px de hauteur</p>
+
+    <svg>
+      <rect id='rectangle' width="400" height="100" fill="red"></rect>
+    </svg>
+
+    <h2>Donut</h2>
+    <svg>
+      <g transform='translate(10, 15)'>
+      <circle cx="50" cy="50" r="60" fill='none' stroke='black' ></circle>
+      <circle cx="50" cy="50" r="30" fill="none" stroke='black' id="donut" ></circle>
+      </g>
+    </svg>
+
+    <h2>Ligne</h2>
+    <p>Créer une ligne qui passe par un point A (20, 50), qui a une longuer de 60px et a une pente de 5</p>
+    <svg width="80" height="51">
+      <line x1="20" y1="50" x2="80" y2="47" stroke="blue" stroke-width="2"></line>
+    </svg>
+
+
+    <h2>Path</h2>
+    <p>Ecrivez votre prénom avec <code>path</code></p>
+    <svg width="800" height="100">
+  	<path d="M 20 100 V0 L100 100 V100 0" fill="none" stroke="steelblue" stroke-width="5" id="firstLetter"></path>
+    <circle r="5" fill="red">
+          <animateMotion dur="1.5s" repeatCount="indefinite">
+            <mpath xlink:href="#firstLetter" />
+          </animateMotion>
+    </svg>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

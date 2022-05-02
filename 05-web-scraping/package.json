@@ -1,0 +1,31 @@
+{
+  "name": "05-web-scraping",
+  "version": "1.0.0",
+  "description": "Exercice 5",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "webpack-dev-server"
+  },
+  "type": "module",
+  "author": "Noemi Romano",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "isomorphic-fetch": "^3.0.0",
+    "jsdom": "^19.0.0",
+    "puppeteer": "^13.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
