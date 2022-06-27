@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js" async></script>
 
-    <title>Alan 1-SVG</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js" async></script>
 
-    <h1>Dessiner des formes</h1>
-    <h2>Rectangle</h2>
-      <svg >
-        <rect x="0" y="0" width="400" height="100" fill="red" />
-      </svg>
+  <title>Alan's 1-SVG</title>
+</head>
 
-    <h2>Donut</h2>
-      <svg >
-        <circle cx="50" cy="50" r="60" fill=none stroke="black"/>
-        <circle cx="50" cy="50" r="30" fill=none stroke="black"/>
-      </svg>
+<body>
 
-    <h2>Ligne</h2>
-     <svg >
-      <circle cx="20" cy="50" r="5" fill="steelblue"/>
-      <text x="25" y="40" font-size="24">A</text>
-      <line x1="10" y1="40" x2="50" y2="80" stroke="red" /> <!--wrong-->
-     </svg>
+  <h1>Dessiner des formes</h1>
+  <h2>Rectangle</h2>
+  <svg class="rectangle" width="400" height="150">
+    <rect x="0" y="0" width="400" height="100" fill="red" />
+  </svg>
 
-    <h2>Path</h2>
-     <svg width="400">
-      <path d="M 0 100 L 40 0 L 80 100 M 12 50 H 71" fill="none" stroke="steelblue" />
-      <path d="M 100 0 L 100 90 C 100 100 100 100 150 100 150 100" fill="none" stroke="steelblue" />
-      <path d="M 170 100 L 210 0 L 250 100 M 182 50 H 241" fill="none" stroke="steelblue" />
-      <path d="M 270 50 Q 270 0, 310 50 T 350 50" stroke="black" fill="transparent"/>
-     </svg>
+  <h2>Donut</h2>
+  <svg class="donut" width="400" height="150">
+    <circle cx="50" cy="50" r="60" fill=none stroke="black" />
+    <circle cx="50" cy="50" r="30" fill=none stroke="black" />
+  </svg>
 
-    <h1>Animer des formes</h1>
+  <h2>Ligne</h2>
+  <svg width="400" height="150">
+    <circle cx="20" cy="50" r="5" fill="steelblue" />
+    <text x="25" y="40" font-size="24">A</text>
+    <line x1="20" y1="50" x2="31.92" y2="108.8" stroke="red"></line>
+  </svg>
 
-    <h2>On click</h2>
-      <svg></svg>
-    
-    <h2>On hover</h2>
-      <svg></svg>
+  <h2>Path</h2>
+  <svg width="400">
+    <path d="M 0 100 L 40 0 L 80 100 M 12 50 H 71" fill="none" stroke="steelblue" />
+    <path d="M 100 0 L 100 90 C 100 100 100 100 150 100 150 100" fill="none" stroke="steelblue" />
+    <path d="M 170 100 L 210 0 L 250 100 M 182 50 H 241" fill="none" stroke="steelblue" />
+    <path d="M 270 50 Q 270 0, 310 50 T 350 50" stroke="steelblue" fill="transparent" />
+  </svg>
 
-    <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
+  <h1>Animer des formes</h1>
 
+  <h2>On click</h2>
+  <svg class="rectangle" width="400" height="150">
+    <rect x="0" y="0" width="400" height="150" fill="red" />
+  </svg>
 
-  </body>
+  <h2>On hover</h2>
+  <svg class="donut" width="400" height="150">
+    <circle cx="50" cy="50" r="60" fill="white" stroke="black" />
+    <circle cx="50" cy="50" r="30" fill="white" stroke="black" />
+  </svg>
+
+  <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le
+    long de la lettre</h2>
+  <svg width="400" height="150">
+    <path d="M 0 100 L 40 0 L 80 100 M 12 50 H 71" fill="none" stroke="steelblue" />
+    <path d="M 0 25 L 10 0 L 20 25 M 3 12.5 H 17.25" fill="none" stroke="red">
+      <animateMotion dur="5s" repeatCount="indefinite" path=" M 0 100 L 40 0 L 80 100 M 12 50 H 71" />
+    </path>
+  </svg>
+</body>
+
 </html>
